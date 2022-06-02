@@ -1,7 +1,13 @@
+import CreateCharacter from "./Components/CreateCharacter";
+import { Home } from "./Components/Home";
+
+
 
 function App() {
   return (
-    <div></div>
+    <div>
+      <Home />
+    </div>
   )
 }
 

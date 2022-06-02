@@ -1,7 +1,15 @@
 const { Router } = require("express");
+const Character = require("./controller/Character");
+const Episode = require('./controller/GetEpisodes')
+const PostCharacter = require('./controller/postCharacter')
+const route = Router();
 
-const router = Router();
 
 // Configurar los routers
 
-module.exports = router;
+route.use('/characters', Character);
+route.use('/episode', Episode);
+route.use('/post', PostCharacter);
+
+
+module.exports = route;
